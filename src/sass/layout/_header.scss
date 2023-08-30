@@ -2,7 +2,11 @@
   width: 100%;
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: var(--primary-bg-color);
+  background-color: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 14;
 
   &__container {
     position: relative;

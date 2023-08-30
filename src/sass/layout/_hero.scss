@@ -1,0 +1,51 @@
+.hero {
+  margin-top: 110px;
+  width: 100%;
+  //height: 100vh;
+  //overflow: hidden;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  &__ellipce {
+    position: relative;
+    width: 1378.139px;
+    height: 1378.139px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+  }
+
+  &__ellipce::before,
+  &__ellipce::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+
+  &__ellipce::before {
+    border: 17px solid rgba(255, 255, 255, 0.5);
+    filter: blur(10px); /* Размытие внутрь */
+  }
+
+  &__ellipce::after {
+    border: 17px solid rgba(255, 255, 255, 0.5);
+    filter: blur(10px); /* Размытие внешнее */
+    z-index: -1;
+  }
+
+  &__img {
+    display:block ;
+    width: 1378px;
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+  }
+}
