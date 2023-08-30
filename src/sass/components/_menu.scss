@@ -1,13 +1,31 @@
 .menu {
   &__list {
+    text-decoration: none;
+    display: flex;
 
   }
 
   &__item:not(:last-child) {
+    margin-right: 42px;
+  }
 
+  &__item:nth-child(3) {
+    margin-right: 100px;
+  }
+
+  &__item:nth-child(4) {
+    margin-left: 100px;
   }
 
   &__link {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-family: Baskervville, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(12 / 12);
+    text-transform: uppercase;
 
   }
 }
