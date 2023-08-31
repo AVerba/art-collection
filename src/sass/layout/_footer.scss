@@ -1,4 +1,8 @@
-.footer{
-  background-color: black;
+.footer {
   padding: 13px 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

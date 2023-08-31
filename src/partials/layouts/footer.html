@@ -1,5 +1,50 @@
 <footer class='footer'>
-  <div class='container'>
-    sd
+  <div class='container footer__container'>
+    <div class="footer__navigation">
+      <a href='#' class='footer__logo'>
+        <include src='./partials/components/logo.html'></include>
+      </a>
+      <div class="footer__menu f-menu">
+        <ul class='f-menu__list'>
+          <li class='f-menu__item'>
+            <a href='#home' class='f-menu__link'>home</a>
+          </li>
+          <li class='f-menu__item'>
+            <a href='#events' class='f-menu__link'>events</a>
+          </li>
+          <li class='f-menu__item'>
+            <a href='#gallery' class='f-menu__link'>gallery</a>
+          </li>
+          <li class='f-menu__item'>
+            <a href='#updates' class='f-menu__link'>updates</a>
+          </li>
+          <li class='f-menu__item'>
+            <a href='#history' class='f-menu__link'>history</a>
+          </li>
+          <li class='f-menu__item'>
+            <a href='#contact' class='f-menu__link'>contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__menu-list"></ul>
+    </div>
+    <div class="footer__contacts contacts">
+      <form class="contacts__form"></form>
+      <ul class="contacts__list">
+        <li class='contacts__item'>
+          <svg class='contacts__icon' width='25' height='25'>
+            <use href='./images/sprite.svg#icon-location'></use>
+          </svg>
+          <a class='contacts__link'>New York, USA </a>
+        </li>
+        <li class='contacts__item'>
+          <svg class='contacts__icon' width='25' height='25'>
+            <use href='./images/sprite.svg#icon-mail'></use>
+          </svg>
+          <a class='contacts__link' href='mailto:mail@gmail.com'>mail@gmail.com</a>
+        </li>
+      </ul>
+
+    </div>
   </div>
 </footer>
