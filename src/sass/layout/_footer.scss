@@ -1,5 +1,5 @@
 .footer {
-  padding: 13px 0;
+  padding: 86px 0;
 
   &__container {
     display: grid;
@@ -34,6 +34,7 @@
     }
 
   }
+
   &__item:nth-child(n+4) {
     margin-right: 0;
   }
@@ -52,3 +53,113 @@
   }
 
 }
+
+.contacts {
+  &__title {
+    color: #FFF;
+    font-family: Baskervville, sans-serif;
+    font-size: 30.211px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 5px;
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 11.639px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    margin-top: 22.5px;
+  }
+
+  p {
+    margin-top: 32.72px;
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 11.639px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+
+  }
+
+  &__link {
+    padding: 10px 0;
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 11.639px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 12px;
+  }
+}
+
+.subscr-form {
+  min-width: 100%;
+  background: tomato;
+
+  &__field {
+  }
+
+  &__input {
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid #FFF;
+    padding: 22px 30px;
+  }
+
+  &__btn {
+    margin-top: 14px;
+    padding: 19.3px 55px;
+    color: #FFF;
+    font-family: Baskervville, sans-serif;
+    font-size: 11.639px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(11.639 / 11.639);
+    text-transform: uppercase;
+    border: 1px solid #FFF;
+    background-color: #272727;
+    cursor: pointer;
+    transition: background-color, color 0.5s ease;
+
+    &:hover {
+      background-color: #a9a3a3;
+      color: #272727;
+
+    }
+  }
+}
+
