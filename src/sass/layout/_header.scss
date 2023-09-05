@@ -23,5 +23,17 @@
   }
 
   &__menu {
+    display: none;
+
+    @include for-size(tablet) {
+      display: block;
+    }
+  }
+  &__mobile-menu {
+    margin-left: auto;
+
+    @include for-size(tablet) {
+      display: none;
+    }
   }
 }

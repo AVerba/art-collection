@@ -16,15 +16,20 @@
   &__row {
     position: relative;
     width: 100%;
-    padding: 474px 0;
+    padding: 210px 0;
     overflow: hidden;
+    @include for-size(tablet) {
+      padding: 310px 0;
+    }
+    @include for-size(desktop) {
+      padding: 474px 0;
+    }
   }
 
   &__ellipce {
     position: absolute;
     top: 3%;
     left: 18%;
-    //transform: translate(-50%, -50%);
     width: 1378.139px;
     height: 1378.139px;
     flex-shrink: 0;
@@ -59,7 +64,6 @@
     top: 62%;
     left: 52%;
     transform: translate(-50%, -50%);
-    z-index: 12;
   }
 
   &__title {
@@ -67,18 +71,20 @@
     position: absolute;
     bottom: -50%;
     left: 0;
-    z-index: 16;
     transform: translate(0, 50%);
     background: linear-gradient(32deg, #111 0%, rgba(0, 0, 0, 0.00) 100%);
     padding: 85.25px 0;
     color: #FFF;
     text-align: center;
     font-family: Bellefair, sans-serif;
-    font-size: 91.612px;
+    font-size: 38.612px;
     font-style: normal;
     font-weight: 400;
-    line-height: calc(91.612 / 91.612);
+    line-height: calc(38.6122 / 38.612);
     text-transform: uppercase;
-
+    @include for-size(tablet) {
+      font-size: 91.612px;
+      line-height: calc(91.612 / 91.612);
+    }
   }
 }
