@@ -19,8 +19,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 31px;
-    right: 18px;
+    top: 51px;
+    right: 26px;
     width: 27px;
     height: 27px;
     background-color: inherit;
@@ -46,26 +46,26 @@
 
 
     &:not(:last-child) {
-      //margin-bottom: 25px;
+      margin-bottom: 25px;
     }
 
-    //&:hover,
-    //&:active {
-    //  border-radius: 4px;
-    //  background-color: #949191;
-    //  padding: 10px 21.5px;
-    //  color: #606B74;
-    //
-    //  .menu__link {
-    //    color: #606B74;
-    //  }
-    //}
+    &:hover,
+    &:active {
+      border-radius: 4px;
+      background-color: #949191;
+      padding: 10px 21.5px;
+      color: #606B74;
+
+      .menu__link {
+        color: #606B74;
+      }
+    }
   }
 
   &__link {
     color: #FFF;
     text-align: center;
-    font-family: Rubik, sans-serif;
+    font-family: Baskervville, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;

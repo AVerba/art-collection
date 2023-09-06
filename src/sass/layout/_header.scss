@@ -29,8 +29,16 @@
       display: block;
     }
   }
+
   &__mobile-menu {
     margin-left: auto;
+    background-color: inherit;
+    height: auto;
+    .icon{
+      fill:#FFFFFF;
+    }
+
+
 
     @include for-size(tablet) {
       display: none;
