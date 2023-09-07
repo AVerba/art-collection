@@ -1,9 +1,26 @@
-.gallery{
-  &__list{
+.gallery {
+  &__list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 1100px;
+    justify-content: space-around;
+
   }
-  &__item{
+
+  &__item {
+    background-color: #131212;
     min-height: 100%;
-  }
+    cursor: pointer;
+    transition: opacity 0.8s;
+   }
+}
+
+.gallery__list:hover .gallery__item {
+  opacity: 0.3;
+}
+
+.gallery__list:hover .gallery__item:hover {
+  opacity: 1;
 }
