@@ -1,0 +1,9 @@
+.gallery{
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    height: auto;
+  }
+}
