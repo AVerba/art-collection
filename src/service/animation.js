@@ -136,3 +136,19 @@ gsap.from(animateTasksItemRight, {
     toggleActions: 'play none none reverse',
   },
 });
+
+
+// Wait for the DOM to be ready
+// Wait for the DOM to be ready
+document.addEventListener('DOMContentLoaded', function () {
+
+  let gallery = document.querySelector('.gallery__list');
+  let masonry = new Masonry(gallery, {
+    itemSelector: '.gallery__item',
+    fitWidth: true
+  });
+
+  imagesLoaded(gallery, function () {
+    masonry.layout();
+  });
+});

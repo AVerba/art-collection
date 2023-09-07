@@ -4,6 +4,6 @@
     flex-wrap: wrap;
   }
   &__item{
-    height: auto;
+    min-height: 100%;
   }
 }
