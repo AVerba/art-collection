@@ -1,12 +1,44 @@
-.products{
-  &__slider{
+.products {
+  &__main-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair, sans-serif;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(130 / 130);
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      left: -10%;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='321' height='70' viewBox='0 0 321 70' fill='none'%3E%3Cpath d='M-127.419 47.0419C-93.4845 16.0772 -0.165241 -29.8184 101.637 34.3169C203.438 98.4522 289.122 55.9495 319.239 26.6812' stroke='white' stroke-width='3.41894'/%3E%3C/svg%3E");
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &::after {
+      position: absolute;
+      right: -10%;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='321' height='71' viewBox='0 0 321 71' fill='none'%3E%3Cpath d='M1.76135 47.5693C35.6958 16.6045 129.015 -29.2911 230.817 34.8442C332.619 98.9795 418.302 56.4768 448.419 27.2086' stroke='white' stroke-width='3.41894'/%3E%3C/svg%3E");
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  &__slider {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__item{
-    height: 80vh;
+  &__item {
+    height: 60vh;
     border-radius: 30px;
     margin: 10px;
     cursor: pointer;
@@ -21,21 +53,24 @@
     transition: all 500ms ease-in-out;
 
   }
-  &__item-title{
+
+  &__item-title {
     font-size: 30px;
     opacity: 0;
   }
-  &__item-conten{
+
+  &__item-conten {
     font-size: 12px;
     opacity: 0;
   }
 }
 
 
-.products__item._active{
+.products__item._active {
   flex: 10;
 }
-.products__item._active .products__item-title, .products__item-content{
+
+.products__item._active .products__item-title, .products__item-content {
   opacity: 1;
   transition: opacity 300ms ease-in 400ms;
 }
