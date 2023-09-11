@@ -1,16 +1,17 @@
 const header = document.querySelector('.header');
 const menuLinks = document.querySelectorAll('.menu__link');
 
-function changeHeaderBackground() {
+function changeHeaderBackground(e) {
   if (window.scrollY > 2) {
-    header.style.backgroundColor = 'rgba(0 0 0 / 36%)';
+    header.style.backgroundColor = 'rgba(251 251 251 / 71%)';
     menuLinks.forEach(link => {
-      link.style.color = 'white';
+      link.style.color = 'black';
     });
   } else {
     header.style.backgroundColor = 'transparent';
+    // header.style.backgroundColor = 'transparent';
     menuLinks.forEach(link => {
-      link.style.color = 'var(--menu-text-color)';
+      link.style.color = 'white';
     });
   }
 }
